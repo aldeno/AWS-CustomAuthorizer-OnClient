@@ -1,0 +1,20 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    Login...
+  </div>
+  <div class="panel-body">
+    <form class="form">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" name="username" class="form-control" ng-model="loginData.username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" class="form-control" ng-model="loginData.password">
+      </div>
+      <input type="button" value="Login" class="btn btn-primary" ng-click="functions.login()">
+      <a style="float:right;" href="#!registration">Sign-up</a>
+      <label ng-show="loginData.hasErrors" class="label label-danger">{{loginData.errorMsg}}</label>
+    </form>
+  </div>
+</div>

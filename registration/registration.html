@@ -1,0 +1,24 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    Registration...
+  </div>
+  <div class="panel-body">
+    <form class="form" action="index.html" method="post">
+      <div class="form-group">
+        <label for="email">E-Mail</label>
+        <input type="text" name="email" class="form-control" ng-model="registrationData.email"/>
+      </div>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" name="username" class="form-control" ng-model="registrationData.username"/>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" class="form-control" ng-model="registrationData.password"/>
+      </div>
+      <input type="button" value="Register" class="btn btn-primary" ng-click="functions.signup()">
+      <a style="float:right;" href="#!login">Back to login</a>
+    </form>
+  </div>
+  <loading-dialog ng-show="processing"></loading-dialog>
+</div>

@@ -1,0 +1,20 @@
+{
+  "name": "awstest",
+  "version": "1.0.0",
+  "description": "Test angularjs app for AWS SDK ",
+  "main": "app.js",
+  "author": "Alden Obradovic",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "dependencies": {
+    "amazon-cognito-identity-js": "^1.19.0",
+    "angular-jwt": "^0.1.9",
+    "angular-route": "^1.6.5",
+    "bootstrap": "^3.3.7"
+  }
+}
