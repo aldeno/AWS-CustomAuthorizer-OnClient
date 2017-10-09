@@ -9,12 +9,18 @@
     "lite-server": "^2.3.0"
   },
   "scripts": {
-    "dev": "lite-server"
+    "build": "browserify --entry services/authorizationService.js --outfile services/auth-build.js",
+    "dev": "lite-server -w 'services/*.js # npm run build'"
   },
   "dependencies": {
     "amazon-cognito-identity-js": "^1.19.0",
     "angular-jwt": "^0.1.9",
     "angular-route": "^1.6.5",
-    "bootstrap": "^3.3.7"
+    "bluebird": "^3.5.1",
+    "bootstrap": "^3.3.7",
+    "browser-request": "^0.3.3",
+    "jsonwebtoken": "^8.0.1",
+    "jwk-to-pem": "^1.2.6",
+    "request": "^2.83.0"
   }
 }

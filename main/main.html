@@ -4,8 +4,27 @@
   </div>
   <div class="panel-body">
     <div class="">
-      <label for="">Test GET</label>
-      <button type="button" name="button" ng-click="functions.testGet()">GET</button>
+      <label for="">Test GET No Auth</label>
+      <button type="button" name="button" class="btn btn-default" ng-click="functions.testGetNoAuth()">GET</button>
+    </div>
+    <hr>
+    <div class="">
+      <label for="">Test GET With Auth</label>
+      <button type="button" name="button" class="btn btn-default" ng-click="functions.testGetWithAuth()">GET</button>
+    </div>
+    <hr>
+    <div class="">
+      <label for="">Test GET With Custom Auth</label>
+      <button type="button" name="button" class="btn btn-default" ng-click="functions.testGetWithCustomAuth()">GET</button>
+    </div>
+
+    <div class="">
+      <label for="">Basic Classic Auth Flow</label>
+      <button type="button" name="button" class="btn btn-default" ng-click="functions.basicClassicAuthFlow()">basicClassicAuthFlow</button>
+    </div>
+    <div class="">
+      <label for="">Do the job</label>
+      <button type="button" name="button" class="btn btn-default" ng-click="functions.doTheJob()">Do The Job</button>
     </div>
     <button style="float: right;" type="button" class="btn btn-primary" name="button" ng-click="functions.logout()">Logout</button>
   </div>

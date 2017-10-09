@@ -16,6 +16,14 @@
         <label for="password">Password</label>
         <input type="password" name="password" class="form-control" ng-model="registrationData.password"/>
       </div>
+      <div class="form-group">
+        <label for="tenantId">Tenant Id</label>
+        <input type="text" name="tenantId" class="form-control" ng-model="registrationData.tenantId" value="">
+      </div>
+      <div class="form-group">
+        <label for="tenantId">Role</label>
+        <select class="form-control" ng-model="registrationData.Role" name="role" ng-options="item for item in roles"></select>
+      </div>
       <input type="button" value="Register" class="btn btn-primary" ng-click="functions.signup()">
       <a style="float:right;" href="#!login">Back to login</a>
     </form>

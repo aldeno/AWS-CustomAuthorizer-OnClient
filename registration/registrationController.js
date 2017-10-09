@@ -4,6 +4,8 @@ app.controller('registrationController', function($scope, identityService, $loca
   $scope.registrationData = {};
   $scope.functions = {};
   $scope.processing = false;
+  $scope.roles = ["Administrator", "TenantAdmin", "ReadOnly"];
+  $scope.registrationData.Role = "Administrator";
 
   $scope.functions.signupCallback = function(err, res){
     $scope.processing = false;
@@ -16,6 +18,7 @@ app.controller('registrationController', function($scope, identityService, $loca
 
   $scope.functions.signup = function(){
       $scope.processing = true;
-      identityService.signup($scope.registrationData.username, $scope.registrationData.password, $scope.registrationData.email, $scope.functions.signupCallback);
+      identityService.signup($scope.registrationData.username, $scope.registrationData.password,
+        $scope.registrationData.email, $scope.registrationData.tenantId, $scope.registrationData.Role, $scope.functions.signupCallback);
   }
 });
